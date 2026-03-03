@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Course Registration Form</title>
+     <link rel="stylesheet" href="style1.css">
+        <legend align="center" class="maintitle"><h2>Course Registration Form</h2></legend>
+</head>
+<body>
+<form class="formsec">
+  
+<table align="center" cellpadding="8" class="table">
+<tr>
+<td><label for="firstname">First Name</label></td>
+<td><input type="text" id="firstname" name="firstname" placeholder="Eg: Kavya" required class="box"><p>Enter your firstname</p></td>
+</tr>
+<tr>
+<td><label for="surname" >Surname</label></td>
+<td><input type="text" id="surname" name="surname" placeholder="Eg: Suripogu" class="box" required><p>Enter your Surname(optional)</p></td>
+</tr>
+
+<tr>
+<td><label for="phone">Phone Number</label></td>
+<td><input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="10 digits only" class="box" required><p>Enter your phonenumber</p></td>
+</tr>
+
+<tr>
+<td><label for="email" > Email</label></td>
+<td><input type="email" id="email" name="email" placeholder="Eg: kavya@gmail.com" required class="box"><p>Enter your email</p>
+<img class="valid" src="5290058.png" alt="valid"/>
+<img class="invalid" src="wrong.jpeg" alt="Invalid">
+</td>
+</tr>
+
+<tr>
+<td><label for="password" >Password</label></td>
+<td><input type="password" id="password" name="password" class="box" required ><p>Enter your password</p> </td>
+</tr>
+
+
+<tr>
+<td><label for="confirm">ConfirmPassword</label></td>
+<td><input type="password" id="confirm" name="confirm"  class="box" required><p>Enter your password to confirm</p></td>
+</tr>
+
+<tr>
+<td><label for="date">Date of Birth</label></td>
+<td><input type="date" id="date" name="date" class="box"><p>Enter your Date of Birth</p></td>
+</tr>
+
+<tr>
+<td><label for="gender">Gender</label></td>
+<td>
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+<input type="radio" name="gender" value="others"> Others
+</td>
+</tr>
+
+<tr>
+<td><label for="country" >SelectCountry</label></td>
+<td>
+<select id="country" name="country" class="box">
+<option>India</option>
+<option>Russia</option>
+<option>America</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label for="upload">Upload Picture</label></td>
+<td><input type="file" class="box"></td>
+</tr>
+<tr>
+<td><label>InstituteName</label></td>
+<td><input type="text" class="box" value="TAP ACADEMY" readonly></td>
+</tr>
+<tr>
+<td><label for="selectcourse">Select Course</label></td></td>
+<td>
+<select name="course" class="box">
+<option>Python Fullstack</option>
+<option>Java Fullstack</option>
+<option>AI & ML</option>
+</select>
+</td>
+</tr>
+
+<tr>
+<td><label>Delivery Mode</label></td>
+<td>
+<input type="checkbox" name="mode" value="online"> Online
+<input type="checkbox" name="mode" value="offline"> Offline
+</td>
+</tr>
+
+<tr>
+<td><label for="comments">Comments</label></td>
+<td>
+<textarea id="comments" name="comments" rows="4" cols="25" class="box"></textarea>
+</td>
+</tr>
+
+<tr>
+<td colspan="2" align="center">
+<input type="submit" value="Register" class="register">
+<input type="reset" value="Reset" class="regiter">
+</td>
+</tr>
+
+</table>
+</fieldset>
+</form>
+
+</body>
+</html>
